@@ -1,9 +1,7 @@
 import { Integrations as ApmIntegrations } from "@sentry/apm";
 import * as Sentry from "@sentry/browser";
-import { ApolloClient } from "apollo-client";
 import * as React from "react";
 import { positions, Provider as AlertProvider, useAlert } from "react-alert";
-import { ApolloProvider } from "react-apollo";
 import { render } from "react-dom";
 import TagManager from "react-gtm-module";
 import { hot } from "react-hot-loader";
