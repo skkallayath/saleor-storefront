@@ -4,7 +4,7 @@ import { Transition } from "react-transition-group";
 
 import { Icon } from "@components/atoms";
 import { largeScreen } from "@styles/constants";
-import LogoSmall from "images/logo-small.svg";
+import LogoSmall from "images/logo-small.jpg";
 
 import { Overlay } from "..";
 import * as S from "./styles";
@@ -95,8 +95,8 @@ export const SideNavbar: React.FC<IProps> = ({
                 name={item.name}
               />
             ) : (
-              <S.NavLink fullWidth type="side" item={item} />
-            )
+                <S.NavLink fullWidth type="side" item={item} />
+              )
           )}
           <Media maxWidth={largeScreen}>
             <S.Item>
@@ -159,8 +159,8 @@ export const SideNavbar: React.FC<IProps> = ({
                     name={item.name}
                   />
                 ) : (
-                  <S.NavLink fullWidth type="side" item={item} />
-                )
+                    <S.NavLink fullWidth type="side" item={item} />
+                  )
               )}
             </S.Menu>
           )}

@@ -9,8 +9,8 @@ import { Icon, NavLink } from "@components/atoms";
 import { largeScreen, smallScreen } from "@styles/constants";
 import { maybe } from "@utils/misc";
 
-import LogoSmall from "images/logo-small.png";
-import Logo from "images/logo.png";
+import LogoSmall from "images/logo-small.jpg";
+import Logo from "images/logo.jpg";
 
 import { Dropdown } from "./Dropdown";
 import * as S from "./styles";
@@ -104,8 +104,8 @@ export const TopNavbar: React.FC<IProps> = ({ items }: IProps) => {
                     {item.name}
                   </S.Button>
                 ) : (
-                  <NavLink item={item} />
-                )}
+                    <NavLink item={item} />
+                  )}
               </li>
             ))}
           </S.Desktop>

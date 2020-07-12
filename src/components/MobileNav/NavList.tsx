@@ -8,7 +8,7 @@ import { baseUrl } from "../../app/routes";
 import NavItem, { INavItem } from "./NavItem";
 
 import backImg from "../../images/arrow-back.svg";
-import logoImg from "../../images/logo.png";
+import logoImg from "../../images/logo.jpg";
 
 interface NavListProps {
   items: INavItem[];
@@ -70,30 +70,30 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
             </span>
           </li>
         ) : (
-          <>
-            <li className="side-nav__menu-item side-nav__menu-item--parent">
-              <Link
-                to={baseUrl}
-                className="side-nav__menu-item-logo"
-                onClick={hideOverlay}
-              >
-                <ReactSVG path={logoImg} />
+            <>
+              <li className="side-nav__menu-item side-nav__menu-item--parent">
+                <Link
+                  to={baseUrl}
+                  className="side-nav__menu-item-logo"
+                  onClick={hideOverlay}
+                >
+                  <ReactSVG path={logoImg} />
+                </Link>
+                <span className="side-nav__menu-item-close" onClick={hideOverlay}>
+                  <span />
+                </span>
+              </li>
+              <li className="side-nav__menu-item">
+                <Link
+                  to={baseUrl}
+                  className="side-nav__menu-item-link"
+                  onClick={hideOverlay}
+                >
+                  Home
               </Link>
-              <span className="side-nav__menu-item-close" onClick={hideOverlay}>
-                <span />
-              </span>
-            </li>
-            <li className="side-nav__menu-item">
-              <Link
-                to={baseUrl}
-                className="side-nav__menu-item-link"
-                onClick={hideOverlay}
-              >
-                Home
-              </Link>
-            </li>
-          </>
-        )}
+              </li>
+            </>
+          )}
 
         {displayedItems.map(item => (
           <NavItem

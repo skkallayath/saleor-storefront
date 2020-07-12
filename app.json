@@ -4,10 +4,14 @@
   "repository": "https://github.com/mirumee/saleor-storefront",
   "website": "http://getsaleor.com/",
   "logo": "https://mirumee.com/img/opensource_saleor.jpg",
-  "keywords": ["saleor", "e-commerce", "storefront"],
+  "keywords": [
+    "saleor",
+    "e-commerce",
+    "storefront"
+  ],
   "env": {
     "API_URI": {
-      "description": "URI of a running instance of Saleor GraphQL API",
+      "description": "URI of a running instance of GraphQL API",
       "value": "https://pwa.demo.saleor.rocks/graphql/"
     }
   },

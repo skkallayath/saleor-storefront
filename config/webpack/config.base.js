@@ -94,7 +94,7 @@ module.exports = ({ sourceDir, distDir }) => ({
     // PWA plugins
     new WebappWebpackPlugin({
       favicons: {
-        appDescription: "Storefront for the Saleor e-commerce platform",
+        appDescription: "Storefront for the e-commerce platform",
         appName: "Saleor",
         background: "#ddd",
         developerURL: null, // prevent retrieving from the nearest package.json

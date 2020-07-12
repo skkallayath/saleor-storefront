@@ -48,9 +48,9 @@ export const SOCIAL_MEDIA = [
 export const META_DEFAULTS = {
   custom: [],
   description:
-    "Open-source PWA storefront built with Saleor's e-commerce GraphQL API. Written with React and TypeScript.",
-  image: `${window.location.origin}${require("../images/logo.png")}`,
-  title: "Demo PWA Storefront – Saleor Commerce",
+    "Open-source PWA storefront written with React and TypeScript.",
+  image: `${window.location.origin}${require("../images/logo.jpg")}`,
+  title: "Demo Storefront – E Commerce",
   type: "website",
   url: window.location.origin,
 };

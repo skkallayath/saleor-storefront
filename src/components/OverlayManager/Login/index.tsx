@@ -21,7 +21,7 @@ import ForgottenPassword from "./ForgottenPassword";
 class Login extends React.Component<
   { overlay: OverlayContextInterface; active?: "login" | "register" },
   { active: "login" | "register" }
-> {
+  > {
   static defaultProps = {
     active: "login",
   };
@@ -46,7 +46,7 @@ class Login extends React.Component<
         <div className="login">
           <Online>
             <div className="overlay__header">
-              <p className="overlay__header-text">Saleor account</p>
+              <p className="overlay__header-text">Account</p>
               <ReactSVG
                 path={closeImg}
                 onClick={hide}
@@ -80,8 +80,8 @@ class Login extends React.Component<
                   />
                 </>
               ) : (
-                <RegisterForm hide={hide} />
-              )}
+                  <RegisterForm hide={hide} />
+                )}
             </div>
           </Online>
           <Offline>

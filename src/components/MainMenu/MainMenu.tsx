@@ -20,7 +20,7 @@ import { TypedMainMenuQuery } from "./queries";
 import cartImg from "../../images/cart.svg";
 import hamburgerHoverImg from "../../images/hamburger-hover.svg";
 import hamburgerImg from "../../images/hamburger.svg";
-import logoImg from "../../images/logo.png";
+import logoImg from "../../images/logo.jpg";
 import searchImg from "../../images/search.svg";
 import userImg from "../../images/user.svg";
 import {
@@ -133,19 +133,19 @@ const MainMenu: React.FC = () => {
                                 }
                               />
                             ) : (
-                              <li
-                                data-test="mobileMenuLoginLink"
-                                className="main-menu__icon"
-                                onClick={() =>
-                                  overlayContext.show(
-                                    OverlayType.login,
-                                    OverlayTheme.left
-                                  )
-                                }
-                              >
-                                <ReactSVG path={userImg} />
-                              </li>
-                            )}
+                                <li
+                                  data-test="mobileMenuLoginLink"
+                                  className="main-menu__icon"
+                                  onClick={() =>
+                                    overlayContext.show(
+                                      OverlayType.login,
+                                      OverlayTheme.left
+                                    )
+                                  }
+                                >
+                                  <ReactSVG path={userImg} />
+                                </li>
+                              )}
                           </>
                         )}
                       />
@@ -201,19 +201,19 @@ const MainMenu: React.FC = () => {
                           }
                         />
                       ) : (
-                        <li
-                          data-test="desktopMenuLoginOverlayLink"
-                          className="main-menu__icon"
-                          onClick={() =>
-                            overlayContext.show(
-                              OverlayType.login,
-                              OverlayTheme.right
-                            )
-                          }
-                        >
-                          <ReactSVG path={userImg} />
-                        </li>
-                      )}
+                          <li
+                            data-test="desktopMenuLoginOverlayLink"
+                            className="main-menu__icon"
+                            onClick={() =>
+                              overlayContext.show(
+                                OverlayType.login,
+                                OverlayTheme.right
+                              )
+                            }
+                          >
+                            <ReactSVG path={userImg} />
+                          </li>
+                        )}
                     </>
                   )}
                 />
